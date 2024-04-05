@@ -1,10 +1,11 @@
 import './App.css';
 import Homepage from './Components/Homepage';
+import MessagingPage from './Components/MessagingPage';
 
 function App() {
   return (
     <div>
-      <Homepage></Homepage>
+      <MessagingPage></MessagingPage>
     </div>
 
   );
