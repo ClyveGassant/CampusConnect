@@ -1,0 +1,99 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #CEDFDF; /* Light blue background for the whole page */
+  }
+
+.homepage {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    
+    margin: auto;
+  }
+  
+  .title {
+    color: #738973; 
+  }
+  
+  .Select {
+    color: #8da298;
+    margin: 20px 0;
+  }
+  
+  .categories-left,
+  .categories-right {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-basis: 50%; /* each column takes half the width */
+  }
+  
+  button {
+    background-color: #8fb8da; 
+    color: white;
+    border: none;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 20px 40px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: background-color 0.3s;
+    width: 90%; 
+  }
+  
+  button:hover {
+    background-color: #0056b3; 
+  }
+  
+  .search-container {
+    position: relative;
+    transform: translateX(-25px);
+    width: 60%;
+    margin: 20px auto;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 10px 40px 10px 20px; /* adjust padding to make space for the button */
+    border-radius: 30px; /* make it pill-shaped */
+    border: 2px solid #8fb8da; /* border color */
+    font-size: 16px;
+    outline: none; /* removes the outline to keep the design clean */
+    position: relative; /* to position the search icon */
+  }
+  
+  .search-button {
+    position: absolute;
+    right: -65px;
+    top: 50%;
+    transform: translateY(-80%);
+    width: 32px; /* adjust size of the search button */
+    height: 32px; /* adjust size of the search button */
+    background-color: #20a9c8; /* same as the border color */
+    border: none;
+    border-radius: 50%; /* circle shape */
+    padding: 0;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .search-button::before {
+    content: '🔍'; /* search icon */
+    color: white;
+    font-size: 20px;
+  }
+  
+  /* additional styles to remove button's default styling */
+  button:focus {
+    outline: none;
+  }
