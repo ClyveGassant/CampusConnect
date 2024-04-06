@@ -1,0 +1,106 @@
+.service-detail {
+    font-family: 'Neue Haas Unica Pro', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .service-header {
+  display: flex; 
+  align-items: center; 
+  justify-content: flex-start;
+  flex-direction: row;
+  padding: 20px;
+  align-self: center;
+  background-color: #b7d1d3;
+  border: 1px solid #ccc; 
+  border-radius: 8px;
+  padding-left: 20px; 
+  max-width: 400px;
+  margin: auto; 
+  margin-top: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 10%;
+  margin-right: 20px; 
+}
+
+.title-rating-container {
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-title {
+  font-size: 50px;
+  font-weight: bold;
+  color: #6c806c;
+  margin: 0 0 0px 0; 
+}
+
+.rating {
+  display: flex; 
+  justify-content: flex-start; 
+  padding: 0;
+  margin: 0; 
+}
+  
+.description-box {
+    background-color: #ede8ce;
+    border: 1px solid #ccc; 
+    border-radius: 8px;
+    padding-left: 20px; 
+    margin: 20px 0; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  .service-description p {
+    margin: px auto;
+    line-height: 1.5;
+    font-size: 20px;
+  }
+  
+.prices {
+    font-weight: bold;
+}
+
+  .see-more,.book-appointment,
+  .reviews  {
+    background-color: #8fb8da;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    position: relative; 
+    border-radius: 20px;
+    cursor: pointer;
+    display: inline-block; /* Allows margin to center the button */
+  }
+  
+  .photos-container {
+    display: flex;
+    justify-content: center; /* Center photos */
+    margin-bottom: 20px; /* Space before buttons */
+    margin-right: 15px;
+  }
+  
+  .photo-title{
+    font-size: 20px; 
+  }
+
+  .photos-container img {
+    width: 150px; /* Adjust based on your design */
+    height: 150px; /* Adjust based on your design */
+    margin: 0 2px; /* Add spacing between photos */
+    border-radius: 5px;
+    object-fit: cover;
+  }
+/*  */ 

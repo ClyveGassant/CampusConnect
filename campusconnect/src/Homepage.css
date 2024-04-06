@@ -7,7 +7,7 @@ body, html {
   }
 
 .homepage {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Neue Haas Unica Pro', sans-serif;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -16,13 +16,15 @@ body, html {
     margin: auto;
   }
   
-  .title {
-    color: #738973; 
+  .header-logo {
+    width: 40%;
+    margin: 20px auto;
   }
   
   .Select {
-    color: #8da298;
-    margin: 20px 0;
+    color: #6c806c;
+    margin-bottom: 10px;
+    margin-top: 0px;
   }
   
   .categories-left,
@@ -39,13 +41,15 @@ body, html {
     border: none;
     border-radius: 20px;
     margin: 10px;
-    padding: 20px 40px;
+    padding: 20px 20px;
     font-size: 16px;
     cursor: pointer;
     outline: none;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     transition: background-color 0.3s;
     width: 90%; 
+    font-weight: bold;
+    font-style: italic;
   }
   
   button:hover {
@@ -62,10 +66,10 @@ body, html {
   .search-input {
     width: 100%;
     padding: 10px 40px 10px 20px; /* adjust padding to make space for the button */
-    border-radius: 30px; /* make it pill-shaped */
-    border: 2px solid #8fb8da; /* border color */
+    border-radius: 30px; 
+    border: 2px solid #8fb8da;
     font-size: 16px;
-    outline: none; /* removes the outline to keep the design clean */
+    outline: none;
     position: relative; /* to position the search icon */
   }
   
@@ -76,7 +80,7 @@ body, html {
     transform: translateY(-80%);
     width: 32px; /* adjust size of the search button */
     height: 32px; /* adjust size of the search button */
-    background-color: #20a9c8; /* same as the border color */
+    background-color: #8fb8da; 
     border: none;
     border-radius: 50%; /* circle shape */
     padding: 0;
@@ -93,7 +97,7 @@ body, html {
     font-size: 20px;
   }
   
-  /* additional styles to remove button's default styling */
+
   button:focus {
     outline: none;
   }

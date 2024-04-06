@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import '../Homepage.css'; // Make sure this path is correct
+import { ReactComponent as Logo } from '../logo.svg';
 
 export default class Homepage extends Component {
     handleSearch = (event) => {
@@ -9,7 +10,7 @@ export default class Homepage extends Component {
     render() {
         return (
         <div className="homepage">
-            <h1 className="title">CampusConnect</h1>
+            <Logo className="header-logo"></Logo>
             <h3 className="Select">Select a service:</h3>
             <div className="categories-left">
             <button>Men's Hair</button>
