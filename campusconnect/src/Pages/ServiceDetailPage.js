@@ -11,6 +11,9 @@ export default class Homepage extends Component {
     render() {
         return (
             <div className="service-detail">
+                <Link to="/">
+                    <button className="back-button">🔙</button>
+                </Link>
                 <div className="service-header">
                     <img src={profilePic} alt="Profile" className="profile-picture" />
                     <div className="title-rating-container">

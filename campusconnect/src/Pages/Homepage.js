@@ -8,7 +8,6 @@ export default class Homepage extends Component {
 
     handleSearch = (event) => {
         event.preventDefault();
-        // Process the search
     };
 
     render() {

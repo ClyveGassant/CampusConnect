@@ -20,7 +20,7 @@ export default class MessagingPage extends Component {
             <p className="message-text">Hey man, you free this weekend?</p>
           </div>
           <div className="message received">
-            <img src={profilePic} alt="Profile" className="profile-picture" />
+            <img src={profilePic} alt="Profile" className="profile-picture" width="10" height="10" />
             <p className="message-text">Yup, I'll be giving cuts from 12-3 Saturday, come through!</p>
           </div>
           <div className="message sent">
