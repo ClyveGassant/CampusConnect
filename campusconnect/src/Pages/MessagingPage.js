@@ -1,19 +1,22 @@
 import React, { Component } from 'react';
-import '../MessagingPage.css'; 
+import '../MessagingPage.css';
 import profilePic from '../assets/logo.png';
+import { Link } from "react-router-dom";
 
 export default class MessagingPage extends Component {
-  
+
   render() {
     return (
       <div className="messaging-page">
         <header className="messaging-header">
-          <button className="back-button">🔙</button>
+          <Link to="/ServiceDetailPage">
+            <button className="back-button">🔙</button>
+          </Link>
           <h1 className="header-title">Campus Cuts</h1>
           <button className="header-options">⋮</button>
         </header>
         <div className="messages-container">
-            <div className="message sent">
+          <div className="message sent">
             <p className="message-text">Hey man, you free this weekend?</p>
           </div>
           <div className="message received">

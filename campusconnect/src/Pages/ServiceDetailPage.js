@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
-import '../ServiceDetailPage.css'; 
+import '../ServiceDetailPage.css';
 import profilePic from '../assets/campuscuts.jpg'; // Example profile pic import
 import examplePhoto1 from '../assets/campuscuts.jpg';
 import examplePhoto2 from '../assets/campuscuts.jpg'; // Example photo import
 import examplePhoto3 from '../assets/campuscuts.jpg'; // Example photo import
-import examplePhoto4 from '../assets/campuscuts.jpg'; 
+import examplePhoto4 from '../assets/campuscuts.jpg';
+import { Link } from "react-router-dom";
 
 export default class Homepage extends Component {
     render() {
@@ -20,17 +21,19 @@ export default class Homepage extends Component {
                 <div className="description-box">
                     <div className="service-description">
                         <p>
-                        Campus cuts is a place for all kind of people, 
-                        especially those that want to feel taken care of without all 
-                        the to-do of a salon. 
+                            Campus cuts is a place for all kind of people,
+                            especially those that want to feel taken care of without all
+                            the to-do of a salon.
                         </p>
                         <p className="prices">
-                        
-                        Prices: $35 - $45
+
+                            Prices: $35 - $45
                         </p>
                     </div>
-                    <button className="see-more">Mesage Campus Cuts</button>
-                
+                    <Link to="/Message">
+                        <button className="see-more">Mesage Campus Cuts</button>
+                    </Link>
+
                     <div className="service-photos">
                         <h2 className='photo-title'>Photos:</h2>
                         <div className="photos-container">
@@ -41,7 +44,7 @@ export default class Homepage extends Component {
                             <img src={examplePhoto4} alt="Service example" />
                         </div>
                     </div>
-                        <button className="reviews">Leave a Review</button>
+                    <button className="reviews">Leave a Review</button>
                 </div>
             </div>
         );
